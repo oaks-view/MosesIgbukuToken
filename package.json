@@ -1,0 +1,25 @@
+{
+  "name": "buycoinsethtoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "export INITIAL_SUPPLY=200000; truffle test",
+    "migrate": "truffle migrate --reset --all --network rinkeby",
+    "migrate:ganache":"truffle migrate --reset --all",
+    "lint": "solium -d contracts/"
+  },
+  "author": "oaks-view",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "truffle-hdwallet-provider": "^1.0.11"
+  },
+  "devDependencies": {
+    "solium": "^1.2.4",
+    "truffle": "^5.0.24"
+  }
+}
